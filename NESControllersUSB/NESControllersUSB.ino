@@ -29,8 +29,8 @@ const char *gp_serial = "NES to USB";
 
 //#define DEBUG
 
-#define GAMEPAD_COUNT 2      // NOTE: No more than TWO gamepads are possible at the moment due to a USB HID issue.
-#define GAMEPAD_COUNT_MAX 4  // NOTE: For some reason, can't have more than two gamepads without serial breaking. Can someone figure out why?
+#define GAMEPAD_COUNT 1      // NOTE: No more than TWO gamepads are possible at the moment due to a USB HID issue.
+#define GAMEPAD_COUNT_MAX 1  // NOTE: For some reason, can't have more than two gamepads without serial breaking. Can someone figure out why?
                              //       (It has something to do with how Arduino handles HID devices)
 #define BUTTON_COUNT       8 // Standard NES controller has four buttons and four axes, totalling 8
 #define BUTTON_READ_DELAY 20 // Delay between button reads in µs
@@ -60,9 +60,9 @@ const char *gp_serial = "NES to USB";
 Gamepad_ Gamepad[GAMEPAD_COUNT];
 
 // Controllers
-uint8_t buttons[GAMEPAD_COUNT_MAX] = {0,0,0,0};
-uint8_t buttonsPrev[GAMEPAD_COUNT_MAX] = {0,0,0,0};
-uint8_t gpBit[GAMEPAD_COUNT_MAX] = {B10000000,B01000000,B00100000,B00010000};
+uint8_t buttons[GAMEPAD_COUNT_MAX] = {0};
+uint8_t buttonsPrev[GAMEPAD_COUNT_MAX] = {0};
+uint8_t gpBit[GAMEPAD_COUNT_MAX] = {B10000000};
 uint8_t btnBits[BUTTON_COUNT] = {0x20,0x10,0x40,0x80,UP,DOWN,LEFT,RIGHT};
 uint8_t gp = 0;
 
