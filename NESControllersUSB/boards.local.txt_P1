@@ -1,6 +1,6 @@
 ##############################################################
 
-leonardo.name=DeamonByte Nes P1
+leonardo.name=DaemonBite Nes P1
 leonardo.vid.0=0x2341
 leonardo.pid.0=0x0036
 leonardo.vid.1=0x2341
@@ -43,8 +43,8 @@ leonardo.build.mcu=atmega32u4
 leonardo.build.f_cpu=16000000L
 leonardo.build.vid=0x2342
 leonardo.build.pid=0x8037
-leonardo.build.usb_product="DeamonByte Nes P1"
-leonardo.build.usb_manufacturer="DeamonByte Nes P1"
+leonardo.build.usb_product="DaemonBite Nes P1"
+leonardo.build.usb_manufacturer="DaemonBite Nes P1"
 leonardo.build.board=AVR_LEONARDO
 leonardo.build.core=arduino
 leonardo.build.variant=leonardo
